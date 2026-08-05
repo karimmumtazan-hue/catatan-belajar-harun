@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Halaman dengan JS Internal</title>
+    <script>
+      // Kode JavaScript ditulis langsung di sini
+      console.log("Halo dari JavaScript internal di head!");
+
+      function tampilkanPesan() {
+        document.getElementById("pesan-demo").innerHTML =
+          "Pesan ini dari JS internal!";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Internal</h1>
+    <p id="pesan-demo">Tunggu pesan...</p>
+    <button onclick="tampilkanPesan()">Tampilkan Pesan</button>
+
+    <script>
+      console.log("Halo dari JavaScript internal di akhir body!");
+      // Kamu juga bisa taruh skrip internal di sini
+      // Di file skrip.js atau di dalem tag <script>
+
+      console.log("Halo, Dunia JavaScript!"); // Nampilin teks
+
+      let nama = "Budi";
+      let usia = 25;
+      console.log(nama); // Nampilin nilai variabel nama ("Budi")
+      console.log("Usia Budi adalah:", usia, "tahun."); // Nampilin beberapa nilai sekaligus
+
+      let hasilPerhitungan = 10 + 5 * 2;
+      console.log("Hasil perhitungannya:", hasilPerhitungan); // Nampilin hasil ekspresi
+
+      let biodata = {
+        kota: "Jakarta",
+        hobi: "Ngoding",
+      };
+      console.log(biodata); // Bisa juga nampilin objek atau array, nanti kita pelajari
+    </script>
+  </body>
+</html>
